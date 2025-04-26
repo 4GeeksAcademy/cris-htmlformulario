@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet"  href="style.css"
+</head>
+
+<body>
+    <div class="formulario">
+        <div class="header">
+            <h2>Payment form example</h2>
+        </div>
+        <div class="contenido">
+            <div class="alerta">
+                Some fields Are Missing
+    
+            </div>
+            <form id="formulario-pago">
+                <div class="formulario-f">
+                    <div class="form">
+                        <label for="card">Card #</label>
+                        <input type="text" id="card" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="form">
+                        <label for="cvc">CVC #</label>
+                        <input type="text" id="cvc" placeholder="0000">
+                    </div>
+                    <div class="form amount">
+                        <label for="amount">Amount</label>
+                        <span>$</span>
+                        <input type="text" id="amount" placeholder="Amount">
+                    </div>
+                </div>
+                <div class="formulario-f">
+                    <div class="form">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName">
+                    </div>
+                    <div class="form">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName">
+                    </div>
+                </div>
+                <div class="formulario-f">
+                    <div class="form">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="form">
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option selected>Pick a state</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="postalCode">Postal Code</label>
+                        <input type="text" id="postalCode">
+                    </div>
+                </div>
+                <div class="formulario-f">
+                    <div class="form">
+                        <label>We accept:</label>
+                        <div class="paymento">
+                            <div class="paymento">
+                                <input type="radio" id="mastercard" name="payment">
+                                <label for="mastercard">MC</label>
+                            </div>
+                            <div class="paymento">
+                                <input type="radio" id="visa" name="payment">
+                                <label for="visa">Visa</label>
+                            </div>
+                            <div class="paymento">
+                                <input type="radio" id="dinersclub" name="payment">
+                                <label for="dinersclub">DC</label>
+                            </div>
+                            <div class="paymento">
+                                <input type="radio" id="amex" name="payment">
+                                <label for="amex">Amex</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Add any notes here."></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <button class="btn btn-cancel">Cancel</button>
+            <button class="btn btn-send">Send</button>
+            
+        </div>
+    </div>
+</body>
+</html>
+    
+    
